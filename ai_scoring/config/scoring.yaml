@@ -1,0 +1,30 @@
+score_scale:
+  min: 0
+  max: 100
+  precision: 2
+
+dimensions:
+  Efficiency:
+    label_cn: 提效爆发力
+    weight: 0.25
+    description: 评估从人工到自动化的耗时缩减倍率，优先识别秒级处理能力。
+  Frequency:
+    label_cn: 场景普适性
+    weight: 0.20
+    description: 区分高频刚需与低频偶发，优先覆盖日结、周报、申报等场景。
+  Security:
+    label_cn: 合规硬红线
+    weight: 0.20
+    description: 审查数据流向，支持本地运行、无网络依赖、数据脱敏能力。
+  Auditability:
+    label_cn: 决策可解释性
+    weight: 0.15
+    description: 要求输出逻辑链路，财务结果必须可追溯。
+  Connectivity:
+    label_cn: 生态连接力
+    weight: 0.15
+    description: 评估与 Excel、SAP、税务系统等环境兼容性，数据可无缝流转。
+  Accessibility:
+    label_cn: 学习易用度
+    weight: 0.05
+    description: 考察非 IT 会计同事上手难度，偏好自然语言或直观 GUI。

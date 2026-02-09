@@ -1,0 +1,43 @@
+finance_keywords:
+  - financial analysis
+  - balance sheet
+  - P&L
+  - profit and loss
+  - cash flow
+  - treasury
+  - tax compliance
+  - statutory reporting
+  - tax strategy
+  - VAT
+  - corporate income tax
+  - fixed asset
+  - SAP
+  - 税务合同审核
+  - accounting
+  - invoice
+  - financial statement
+  - bookkeeping
+
+github_search:
+  combine_mode: false
+  
+  # 定义两种策略供代码调用
+  strategies:
+    # Tier 1: 最近一周，按更新时间排序 (优先)
+    latest_week:
+      days_back: 7
+      sort: updated
+      query_suffix: "pushed:>{date}"
+
+    # Tier 2: 最近90天，按 Star 排序 (保底)
+    classic_fallback:
+      days_back: 90
+      sort: stars
+      query_suffix: "pushed:>{date}"
+
+xhs_search:
+  combine_mode: false
+  strategies:
+    trending:
+      days_back: 7
+      sort: latest

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data files
+*.xlsx
+*.xls
+knowledge_base/
+ai_scoring/output/
+ai_scoring/input/*.xlsx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.exe
+*.spec
+build_v2/
+dist_v2/
+
+# Logs
+*.log
+
+# Temporary files
+.trae/
