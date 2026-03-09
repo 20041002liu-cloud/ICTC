@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>玛氏实习 | 刘喜阳</title>
+    <meta name="description" content="刘喜阳在玛氏ICT中心的实习项目与成果总结" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html">JASON LIU</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="./index.html">首页</a>
+        <a href="./internship.html">玛氏实习</a>
+        <a href="./projects.html">项目经历</a>
+        <a href="./about.html">关于我</a>
+        <a href="./contact.html">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="reveal-card" data-reveal>
+          <p class="eyebrow">Mars ICT Center · 2025.12 - 2026.03</p>
+          <h1>
+            玛氏实习<br />
+            <span>Top 快消外企业务场景实战</span>
+          </h1>
+          <p class="lead">围绕财税与合同场景，我在实习期完成了 4 个落地项目，下面是项目细节。</p>
+          <div class="hero-actions">
+            <a class="btn secondary" href="./contact.html">联系我</a>
+          </div>
+        </div>
+        <figure class="hero-media reveal-card" data-reveal>
+          <img class="parallax-media" data-parallax src="./ab163280b59db12b64477a5902b5c2df.jpg" alt="玛氏实习证件与工作场景" />
+          <figcaption class="badge">Mars Wrigley Intern</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <div class="title-row reveal-card" data-reveal>
+          <h2>四个实习项目</h2>
+          <p class="sub">点击收起或展开</p>
+        </div>
+
+        <div class="detail-list">
+          <details class="detail-card reveal-card" data-reveal open>
+            <summary>
+              <div class="detail-head">
+                <h3>1) 税务数仓搭建与自动化 ETL 链路</h3>
+                <p>面向 Finance 税务报表场景</p>
+              </div>
+              <span class="detail-switch" aria-hidden="true"></span>
+            </summary>
+            <div class="detail-body">
+              <div class="micro-cue cue-etl" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="bullet-list">
+                <li>背景：SAP 数据抽取到审计报表输出依赖手工处理，月度人力消耗高。</li>
+                <li>动作：基于 Hive 打通端到端链路，编写 VBScript 实现一键参数化取数。</li>
+                <li>动作：使用 Python + Hive SQL 做多源数据清洗、计算与自动化报表输出。</li>
+              </ul>
+              <p class="project-result">结果：月度工时从约 100 小时压缩到 5 小时。</p>
+              <div class="stack-row">
+                <span>SAP</span>
+                <span>VBScript</span>
+                <span>Python</span>
+                <span>Hive SQL</span>
+              </div>
+            </div>
+          </details>
+
+          <details class="detail-card reveal-card" data-reveal open>
+            <summary>
+              <div class="detail-head">
+                <h3>2) P&L Gap Day 数据预测</h3>
+                <p>面向全球 P 日历与中国自然月错位场景</p>
+              </div>
+              <span class="detail-switch" aria-hidden="true"></span>
+            </summary>
+            <div class="detail-body">
+              <div class="micro-cue cue-forecast" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="bullet-list">
+                <li>背景：全球 P 日历与中国自然月不一致，空档日 P&L 需提前准确预测。</li>
+                <li>动作：从 SAP FBL3N 抽取历史科目明细，构造 Profit Center 等十余个特征。</li>
+                <li>动作：基于 LSTM 完成时序建模，并做历史回测验证。</li>
+              </ul>
+              <p class="project-result">结果：回测 MAPE 控制在 4% 以内，支撑税额与净利润测算。</p>
+              <div class="stack-row">
+                <span>SAP FBL3N</span>
+                <span>Feature Engineering</span>
+                <span>LSTM</span>
+                <span>Forecasting</span>
+              </div>
+            </div>
+          </details>
+
+          <details class="detail-card reveal-card" data-reveal open>
+            <summary>
+              <div class="detail-head">
+                <h3>3) 基于 Claude 的合同初审 AI 助手</h3>
+                <p>面向法务/采购合同初审效率场景</p>
+              </div>
+              <span class="detail-switch" aria-hidden="true"></span>
+            </summary>
+            <div class="detail-body">
+              <div class="micro-cue cue-ai" aria-hidden="true">
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="bullet-list">
+                <li>背景：合同初审依赖人工逐条核验，法务与采购协同成本高。</li>
+                <li>动作：自主设计 Agent 编排逻辑与 Skill 工具（抽取/比对/分析）。</li>
+                <li>动作：实现付款、违约、合规条款抽取与风险点比对规则。</li>
+              </ul>
+              <p class="project-result">结果：推动约 50 名内部用户试点落地，显著缩短合同审查时间。</p>
+              <div class="stack-row">
+                <span>Claude</span>
+                <span>Agent Workflow</span>
+                <span>Prompt Engineering</span>
+                <span>Risk Check</span>
+              </div>
+            </div>
+          </details>
+
+          <details class="detail-card reveal-card" data-reveal open>
+            <summary>
+              <div class="detail-head">
+                <h3>4) 中美会计准则科目管理系统</h3>
+                <p>面向北亚区 PRC/US GAAP 并行核算场景</p>
+              </div>
+              <span class="detail-switch" aria-hidden="true"></span>
+            </summary>
+            <div class="detail-body">
+              <div class="micro-cue cue-db" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="bullet-list">
+                <li>背景：中方/美方科目启用状态分散维护，存在科目混用风险。</li>
+                <li>动作：基于 SQLite 设计核心表结构，构建多条件查询与视图。</li>
+                <li>动作：实现科目状态一键筛选、批量更新、快速核验流程。</li>
+              </ul>
+              <p class="project-result">结果：核验耗时从 5 分钟/次降至 30 秒/次，覆盖 3000+ 科目。</p>
+              <div class="stack-row">
+                <span>SQLite</span>
+                <span>SQL Views</span>
+                <span>Batch Update</span>
+                <span>Finance Data</span>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section>
+        <div class="title-row reveal-card" data-reveal>
+          <h2>成果总结</h2>
+          <p class="sub">实习阶段核心产出</p>
+        </div>
+        <div class="summary-grid">
+          <article class="summary-item reveal-card tilt-card" data-reveal>
+            <h3>税务报表链路自动化</h3>
+            <p>月度工时从 100h 降至 5h。</p>
+          </article>
+          <article class="summary-item reveal-card tilt-card" data-reveal>
+            <h3>P&L 预测回测误差</h3>
+            <p>MAPE 控制在 4% 以内。</p>
+          </article>
+          <article class="summary-item reveal-card tilt-card" data-reveal>
+            <h3>合同 AI 助手试点</h3>
+            <p>覆盖约 50 名内部用户。</p>
+          </article>
+          <article class="summary-item reveal-card tilt-card" data-reveal>
+            <h3>科目管理系统</h3>
+            <p>覆盖 3000+ 科目，核验 5 分钟降至 30 秒。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Jason Liu · Mars Internship Highlights</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
